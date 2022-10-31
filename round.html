@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>All Products - MENS STORE </title>
+        <link rel="stylesheet" href="style1.css">
+        <link href="<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+    </head>
+    <body>
+ <div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <a href="main.html"> <img src="webcreation/mens_only.png" width="125px"></a>
+    </div>     
+       <nav>
+        <ul id="menuitems">
+            <li><a href="main.html">HOME</a></li>
+            <li><a href="product.html">PRODUCTS</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">CONTACT</a></li>
+            <li><a href="account.html">ACCOUNT</a></li>
+        </ul>
+       </nav>
+       <a href="cart.html">  <img src="webcreation/cart.png" width="30px" height="30"></a>
+       <img src="webcreation/menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+     </div> 
+      
+         <!------- Single Product Details ------->
+      
+         <div class="small-container single-product">
+            <div class="row">
+                <div class="col-2">
+                    <img src="webcreation/sk.jpg" width="100%" id="productImg">
+                    <div class="small-img-row">
+                        <div class="small-img-col">
+                         <img src="webcreation/sk1.jpg" width="100%" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="webcreation/sk3.jpg" width="100%" class="small-img">
+                           </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <p>Home /Sweater</p>
+                    <h1>Round Neck Sweater</h1>
+                    <h4>₹549.00</h4>
+                    <Select>
+                        <option>Select Size</option>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                        <option>XL</option>
+                        <option>XXL</option>
+                    </Select>
+                    <input type="number" value="1">
+                    <a href="cart.html"class ="btn"> Add To Cart</a>
+                    <h3>Product Details <i class="fa fa-indent"></i></h3>
+                    <br>
+                    <p>Pure Cotton <br>
+                    Brand Fit Regular<br>
+                    All Size Available </p>
+                </div>
+            </div>
+         </div>
+              <!------tittle------->
+     <div class="small-container">
+        <div class="row row-2">
+            <h2>Related Products</h2>
+            <a href="product.html"><p>View More</p></a>
+        </div>
+    </div>
+    
+    
+    
+          <div class="small-container">
+            <div class="row">
+                <div class="col-4">
+                    <a href="greyJ.html"><img src="webcreation/k.jpg"></a>
+                    <h4> Gray Jacket</h4>
+                        <p>₹799.00</p>
+                    </div>
+                    <div class="col-4">
+                        <a href="yellow.html">  <img src="webcreation/1.jpeg"></a>
+                        <h4>color Hoddie</h4>
+                            <p>₹599.00</p>
+                        </div>
+                        <div class="col-4">
+                            <a href="full s.html"> <img src="webcreation/m.JPEG"></a>
+                            <h4>Full seleeve  Sweatshirt</h4>
+                                <p>₹699.00</p>
+                            </div>
+                            <div class="col-4">
+                                <a href="high.html"><img src="webcreation/xl.jpeg"></a>
+                                <h4>Highlander color Jacket</h4>
+                                    <p>₹899.00</p>
+                                </div>                         
+                </div>     
+                <div class="page-ptn"> 
+                    <a href="main.html"><span>&#8594;</span></a>
+                   </div>   
+          </div>
+<!------ footer------>
+<div class="footer">
+    <div class="container">
+        <div class="class">
+            <div class="footer-col-1">
+                <h3>Download Our APP</h3>
+              <P>Download App for Andriod and ios mobile phone.</P>
+              <div class="app-logo">
+                <img src="webcreation/play-store.png">
+                <img src="webcreation/app-store.png">
+              </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="webcreation/mens_only.png">
+                <p> Our Purpose is to Sustainably Make the pleasure and 
+                    Benefits of sports Accessible to the Many.</p>
+            </div>
+        <div class="footer-col-3">
+            <h3>Follow US</h3>
+          <ul>
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>Instagram</li>
+            <li>Youtube</li>
+          </ul>
+        </div>
+        </div>
+    <hr>
+    <p class="Copyright"> Copyright 2020 - Mens only </p>
+</div> 
+</div>
+
+<!-------- js for toggle menu------>
+<script>
+    var menuitems=document.getElementById("menuitems");
+    menuitems.style.maxHeight="0px";
+    function menutoggle(){
+        if(menuitems.style.maxHeight="0px")
+            {
+            menuitems.style.maxHeight="200px";
+            }
+        else
+            {
+                menuitems.style.maxHeight="0px";
+            }
+    }
+</script>
+
+<!-------- js for product gallery-------->
+<script>
+    var productImg = document.getElementById("productImg");
+    var smallImg = document.getElementsByClassName("small-img");
+
+    SmallImg[0].oneclick = function()
+    {
+        productImg.src = SmallImg[0].src;
+    }
+    SmallImg[1].oneclick = function()
+    {
+        productImg.src = SmallImg[1].src;
+    }
+</script>
+
+</body>
+</html> 

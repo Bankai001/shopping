@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>All Products - MENS STORE </title>
+        <link rel="stylesheet" href="style1.css">
+        <link href="<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+    </head>
+    <body>
+ <div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <a href="main.html"> <img src="webcreation/mens_only.png" width="125px"></a>
+    </div>     
+       <nav>
+        <ul id="menuitems">
+            <li><a href="main.html">HOME</a></li>
+            <li><a href="product.html">PRODUCTS</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">CONTACT</a></li>
+            <li><a href="account.html">ACCOUNT</a></li>
+        </ul>
+       </nav>
+       <a href="cart.html"><img src="webcreation/cart.png" width="30px" height="30"></a>
+       <img src="webcreation/menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+     </div> 
+      <div class="small-container">
+        <div class="row row-2">
+            <h2>All Products</h2>
+            <select>
+                <option>Default Shorting</option>
+                <option>Short by Price</option>
+                <option>Short by Popularity</option>
+                <option>Short by Rating</option>
+                <option>Short by Sale</option>
+            </select>
+        </div>
+
+        <div class="row">
+            <div class="col-4">
+                <a href="grey.html"><img src="webcreation/l.jpeg"></a>
+                <h4> Gray Printed Hoddie</h4>
+                    <p>₹649.00</p>
+                </div>
+                <div class="col-4">
+                    <a href="yellow.html"><img src="webcreation/1.jpeg"></a>
+                    <h4>color Hoddie</h4>
+                        <p>₹599.00</p>
+                    </div>
+                    <div class="col-4">
+                        <a href="full s.html"><img src="webcreation/m.JPEG"></a>
+                        <h4>Full seleeve  Sweatshirt</h4>
+                            <p>₹699.00</p>
+                        </div>
+                        <div class="col-4">
+                            <a href="high.html"><img src="webcreation/xl.jpeg"></a>
+                            <h4>Highlander color Jacket</h4>
+                                <p>₹899.00</p>
+                            </div>                         
+            </div>
+            
+            <div class="row">
+                <div class="col-4">
+                    <a href="round.html"><img src="webcreation/sk.jpg"></a>
+                    <h4>Round Neck Sweater</h4>
+                        <p>₹549.00</p>
+                    </div>
+                    <div class="col-4">
+                    <a href="hrx.html"><img src="webcreation/b.jpg"></a>
+                        <h4>Hrx Full seleeve Hoddie</h4>
+                            <p>₹799.00</p>
+                        </div>
+                        <div class="col-4">
+                            <a href="casual.html"><img src="webcreation/p.jpeg"></a>
+                            <h4> Casual Shirt</h4>
+                                <p>₹499.00</p>
+                            </div>
+                            <div class="col-4">
+                                <a href="casual1.html"><img src="webcreation/g.jpg"></a>
+                                <h4>Casual Shirt</h4>
+                                    <p>₹499.00</p>
+                                </div>     
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <a href="white.html"><img src="webcreation/q.jpg"></a>
+                        <h4>White Jacket</h4>
+                            <p>₹999.00</p>
+                        </div>
+                        <div class="col-4">
+                            <a href="greyJ.html"><img src="webcreation/k.jpg"></a>
+                            <h4>Grey Jacket</h4>
+                                <p>₹799.00</p>
+                            </div>
+                            <div class="col-4">
+                                <a href="yellowS.html"><img src="webcreation/o.jpg"></a>
+                                <h4>Yellow Sweatshirt</h4>
+                                    <p>₹399.00</p>
+                                </div>
+                                <div class="col-4">
+                                    <a href="wild.html"><img src="webcreation/w.jpg"></a>
+                                    <h4>Wildcraft Printed Sweatshirt</h4>
+                                    <div class="rating"> 
+                            <p>₹699.00</p>
+                        </div>                                    
+                </div>
+                </div>
+               <div class="page-ptn"> 
+                <a href="main.html"><span>&#8594;</span></a>
+               </div>
+      </div>
+<!------ footer------>
+<div class="footer">
+    <div class="container">
+        <div class="class">
+            <div class="footer-col-1">
+                <h3>Download Our APP</h3>
+              <P>Download App for Andriod and ios mobile phone.</P>
+              <div class="app-logo">
+                <img src="webcreation/play-store.png">
+                <img src="webcreation/app-store.png">
+              </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="webcreation/mens_only.png">
+                <p> Our Purpose is to Sustainably Make the pleasure and 
+                    Benefits of sports Accessible to the Many.</p>
+            </div>
+        <div class="footer-col-3">
+            <h3>Follow US</h3>
+          <ul>
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>Instagram</li>
+            <li>Youtube</li>
+          </ul>
+        </div>
+        </div>
+    <hr>
+    <p class="Copyright"> Copyright 2020 - Mens only </p>
+</div> 
+</div>
+
+<!-------- js for toggle menu------>
+<script>
+    var menuitems=document.getElementById("menuitems");
+    menuitems.style.maxHeight="0px";
+    function menutoggle(){
+        if(menuitems.style.maxHeight="0px")
+            {
+            menuitems.style.maxHeight="200px";
+            }
+        else
+            {
+                menuitems.style.maxHeight="0px";
+            }
+    }
+</script>
+</body>
+</html> 
